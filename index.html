@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Quanto devo ganhar?</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="description" content="Calcule quanto voçê devera ganhar!">
+	<meta property="og:title" content="@dev.rik3">
+	<meta property="og:description" content="Calcule quanto voçê devera ganhar!">
+	<meta property="og:image" content="cole um endereço URL!">
+	<meta name="theme-color" content="#FFF">
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header id="header">
+		<div class="hamburguer" id="IconHamburguer">
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		<nav id="itensNav">
+			<h2>
+				<a href="https://github.com/devrik3/">@dev.rik3</a>
+			</h2>
+		</nav>
+		
+
+		<h2>Quanto devo ganhar?</h2>
+	</header>
+	<section>
+		<figcaption>
+			<h2>“Qualquer um pode escrever um código que o computador entenda. Bons programadores escrevem códigos que os humanos entendam.”</h2>
+			<img src="images/bg.jpg">
+		</figcaption>
+	</section>
+	<main>
+		<section>
+			<h2>Quanto custa o seu tempo?</h2>
+			<p>Não gaste seu tempo atoa!</p>
+			<article>
+				<form id="sForm" action="#" method="POST">
+					
+					<span>
+						<p>Preço do seu tempo</p>
+						<input type="text" id="sPrecoH" size="5" maxlength="5" onKeyUp="mascaraMoeda(this, event)">
+					</span>
+					<span>
+						<p>Carga Horaria</p>
+						<input type="time" id="sHora" placeholder="hours">
+					</span>
+
+					<span>
+						<p>Dias por Semana?</p>
+						<input type="number" min="0" max="7" maxlength="7" step="1" id="sDias" placeholder="weeks" minlength="1" maxLength="7" size="7">
+					</span>
+
+					<span>
+						<p>Quantos dias irá durar o projeto</p>
+						<input type="number"  min="0" max="1460" maxlength="1460" step="1" id="sDuracao" placeholder="days">
+					</span>
+
+					<span>
+						<button>Calcular</button>
+					</span>
+				</form>
+			</article>
+
+			<div class="informacoes" id="informacoesProjeto">
+				<h2>Informações do Projeto</h2>
+				<p id="cargaHoraria"></p>
+				<p id="valorDiaProjeto"></p>
+				<p id="valorTotalProjeto"></p>
+			</div>
+		</section>
+	</main>
+
+	<div class="cxErro">
+		<div class="boxErro" id="boxErro">
+			<p>Existe algum campo vazio.</p>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js
+"></script>
+	<script src="js/main.js"></script>
+	<script src="js/jquery.js"></script>
+</body>
+</html>
